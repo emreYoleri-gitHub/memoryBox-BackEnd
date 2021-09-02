@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json({ limit: "20mb" }));
-app.use(cors({credentials : true , origin : "https://memory-box-with-mern.netlify.app"}));
+app.use(cors({credentials : true , origin : "https://memory-box-with-mern.herokuapp.com/https://memory-box-with-mern.netlify.app"}));
 app.use(cookieParser())
 
 app.use("/memories", memoryRouter);
